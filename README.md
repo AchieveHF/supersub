@@ -12,7 +12,7 @@
 - macOS Apple Silicon（arm64）
 - macOS Intel（x64）
 
-桌面版本使用 `desktop-v*` 标签。首次发布前暂时不会显示安装包。
+桌面版本使用 `desktop-v*` 标签。请下载 Release 资产列表中明确标注平台的 `.exe` 或 `.dmg` 文件；GitHub 自动显示的 `Source code` 压缩包只包含本发行仓库的说明文件，并非应用源码或安装包。
 
 ## Docker
 
