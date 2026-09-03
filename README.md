@@ -1,29 +1,44 @@
 # 超级订阅
 
-超级订阅支持夸克网盘、阿里云盘和 115 网盘的资源获取、转存及订阅自动转存。
+超级订阅是一个网盘转存工具，需要配合 [supersub.top](https://supersub.top) 资源站使用。
 
-本仓库是超级订阅的公开发行仓库，用于提供桌面安装包、Docker 部署文件、版本说明和校验文件；产品源码在私有仓库中维护，不在这里发布。
+在电脑上登录你的网盘账号后，可以把选中的内容保存到自己的网盘，也可以订阅感兴趣的内容，在有新资源时自动转存。目前支持：
+
+- 夸克网盘
+- 阿里云盘
+- 115 网盘
+
+## 有哪些版本
+
+### 桌面端
+
+适合在 Windows 或 Mac 电脑上使用。打开软件后可以找资源、登录网盘、转存内容和查看任务。如果需要自动转存订阅更新，请保持程序运行。
+
+### Docker 版
+
+适合长时间运行在 NAS 或服务器上，可以在没有打开个人电脑的情况下持续处理转存任务。官方镜像：[`achievehf/supersub`](https://hub.docker.com/r/achievehf/supersub)。
+
+### 微信小程序
+
+小程序是附加的便捷管理入口，可以用来管理设备和网盘账号，也可以邀请好友把他们的网盘绑定到你的设备。
 
 ## 桌面端下载
 
 当前正式版：[`v1.0.0`](https://github.com/AchieveHF/supersub/releases/tag/v1.0.0)
 
-- Windows x64：[安装版（exe）](https://github.com/AchieveHF/supersub/releases/download/v1.0.0/SuperSubscription-1.0.0-x64-setup.exe) · [便携版（exe）](https://github.com/AchieveHF/supersub/releases/download/v1.0.0/SuperSubscription-1.0.0-x64-portable.exe)
-- [macOS Apple Silicon（arm64.dmg）](https://github.com/AchieveHF/supersub/releases/download/v1.0.0/SuperSubscription-1.0.0-arm64.dmg)
-- [macOS Intel（x64.dmg）](https://github.com/AchieveHF/supersub/releases/download/v1.0.0/SuperSubscription-1.0.0-x64.dmg)
+- [Windows x64 安装版（推荐）](https://github.com/AchieveHF/supersub/releases/download/v1.0.0/SuperSubscription-1.0.0-x64-setup.exe)：适合大多数 Windows 电脑，按提示安装后使用
+- [Windows x64 便携版](https://github.com/AchieveHF/supersub/releases/download/v1.0.0/SuperSubscription-1.0.0-x64-portable.exe)：无需安装，下载后直接运行
+- [macOS Apple 芯片版](https://github.com/AchieveHF/supersub/releases/download/v1.0.0/SuperSubscription-1.0.0-arm64.dmg)：适用于 M1、M2、M3、M4 等机型
+- [macOS Intel 芯片版](https://github.com/AchieveHF/supersub/releases/download/v1.0.0/SuperSubscription-1.0.0-x64.dmg)：适用于 Intel 芯片的 Mac
 
-桌面版本使用 `v*` 标签。请下载 Release 资产列表中明确标注平台的 `.exe` 或 `.dmg` 文件；GitHub 自动显示的 `Source code` 压缩包只包含本发行仓库的说明文件，并非应用源码或安装包。
+GitHub 自动显示的 `Source code` 压缩包不是安装包，普通用户无需下载。
 
-## Docker
+## 安全说明
 
-官方镜像发布在 Docker Hub：[`achievehf/supersub`](https://hub.docker.com/r/achievehf/supersub)。
+网盘登录数据只保存在用户自己的设备本地。软件本身不提供或存储资源文件，请遵守所在地法律法规和网盘平台规则，只处理你有权使用的内容。
 
-Docker 镜像由私有源码仓库的发布流程直接构建并推送到 Docker Hub，不占用本仓库的桌面 Release 列表。
-
-## 文件校验
-
-每个 Release 都附带 `SHA256SUMS`。下载安装包或部署文件后，请先核对 SHA-256，再进行安装或升级。
+当前版本还没有通过 Windows 和 macOS 的官方签名认证，系统可能显示安全提示。请只从本仓库的 [Releases](https://github.com/AchieveHF/supersub/releases) 下载。
 
 ## 问题反馈
 
-普通使用问题可以通过本仓库的 Issues 反馈。涉及账号、凭据或其他敏感信息时，请勿发布到公开 Issue。
+使用中遇到问题，可以通过本仓库的 [Issues](https://github.com/AchieveHF/supersub/issues) 反馈。请勿在公开页面上传网盘账号、登录信息、二维码或完整日志。
