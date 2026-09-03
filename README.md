@@ -6,11 +6,12 @@
 
 ## 桌面端下载
 
-请前往 [Releases](https://github.com/AchieveHF/supersub/releases) 下载与系统匹配的安装包：
+当前桌面测试版：[`desktop-v0.1.0-beta.5`](https://github.com/AchieveHF/supersub/releases/tag/desktop-v0.1.0-beta.5)
 
-- Windows x64 安装版或便携版
-- macOS Apple Silicon（arm64）
-- macOS Intel（x64）
+- [Windows x64 安装版（exe）](https://github.com/AchieveHF/supersub/releases/download/desktop-v0.1.0-beta.5/SuperSubscription-0.1.0-beta.5-x64-setup.exe)
+- [Windows x64 便携版（exe）](https://github.com/AchieveHF/supersub/releases/download/desktop-v0.1.0-beta.5/SuperSubscription-0.1.0-beta.5-x64-portable.exe)
+- [macOS Apple Silicon（arm64.dmg）](https://github.com/AchieveHF/supersub/releases/download/desktop-v0.1.0-beta.5/SuperSubscription-0.1.0-beta.5-arm64.dmg)
+- [macOS Intel（x64.dmg）](https://github.com/AchieveHF/supersub/releases/download/desktop-v0.1.0-beta.5/SuperSubscription-0.1.0-beta.5-x64.dmg)
 
 桌面版本使用 `desktop-v*` 标签。请下载 Release 资产列表中明确标注平台的 `.exe` 或 `.dmg` 文件；GitHub 自动显示的 `Source code` 压缩包只包含本发行仓库的说明文件，并非应用源码或安装包。
 
